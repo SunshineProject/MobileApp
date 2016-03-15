@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQM Complex Demo</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+    <script type="text/javascript">
+ 		try{
+ 			conf = localStorage.getItem('config_object')
+ 			
+ 			if (conf != null){
+ 				window.location.href = "index.html#mappage"
+ 			}
+ 			
+ 		}
+ 		catch(err) { 		    
+ 		    //window.location.href = "login.html"
+
+ 		}
+ 		</script>
+    
+    
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" /> -->
+   	<link rel="stylesheet" href="theme/jquery.mobile-1.2.0.min.css" />	   		
+    <script src="theme/jquery-1.6.4.min.js"></script>            	
+    <script src="theme/jquery.mobile-1.0.1.min.js"></script>
+    <script src="login.js"></script>
+    <!-- 
+   	<script src="theme/jquery-1.6.4.min.js"></script>            	
+    <script src=theme/jquery.mobile-1.0.1.min.js></script>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />    
+    
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	 -->
+    
+</head>
+<body onload="console.log('carico login')">
+    <div data-role="page" id="first" data-theme="b">
+        <div data-role="header" data-theme="a">
+            <h3>map4data</h3>
+        </div>
+ 
+        <div data-role="content">
+            <form id="loginForm"  class="form" method="post"  action="">
+            <!--  action="to define" class="ui-body ui-body-a ui-corner-all  data-ajax="true""-->
+                <fieldset>
+                    <div data-role="fieldcontain">
+                        <label for="username">Enter your username:</label>
+                        <input type="text" value="" name="username" id="username"/>
+                    </div>                                 
+                    <div data-role="fieldcontain">                                     
+                        <label for="password">Enter your password:</label>
+                        <input type="password" value="" name="password" id="password"/>
+                    </div>
+                    
+                    
+                    <!-- 
+                    		<option value="" >Select your pilot</option>
+							<option value="ferrara" >Ferrara</option>
+							<option value="lamia">Lamia</option>
+							<option value="trento">Trento</option>
+							<option value="cles">Cles</option>
+							<option value="zagreb">Zagreb</option>
+							<option value="paola">Paola</option>
+					 -->		
+							
+							
+                    <div data-role="fieldcontain">
+						<label for="pilot" class="select">Pilot:</label>
+						<select name="pilot" id="pilot" data-native-menu="true">
+			
+						</select>
+					</div>
+					
+					<input type="button" value="Reload pilots" id="reloadPilot">
+					
+					
+					<input type="button" value="Login" id="submitButton">
+					<!-- <a href="index.html#mappage"  rel="external" data-role="button" >submit</a> -->
+					
+                    
+                    
+                    
+                   <!--  <input type="submit" data-theme="b" name="submit" id="submit" value="Submit"> -->
+                </fieldset>
+            </form>                             
+        </div>
+    </div>
+    <script type="text/javascript">
+    //$("loginForm").live('submit', false )
+    //$("#loginForm").live("submit",function( event ) {
+    //	  console.log('prova');
+    //});
+    </script>
+</body>
+</html>

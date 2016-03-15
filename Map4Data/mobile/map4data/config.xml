@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="it.graphitech.sunshinemap4data" version="0.7.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>map4data</name>
+  <description>
+     Check and complete geo-information about buildings in your city
+    </description>
+  <author email="enrico.deguidi" href="http://www.sinergis.it/it/">
+        Sinergis
+    </author>
+  <content src="login.html"/>
+  <access origin="*"/>
+  <icon src="icon.png"/>
+  <preference name="permissions" value="none"/>
+  <feature name="http://api.phonegap.com/1.0/geolocation"/>
+  <feature name="http://api.phonegap.com/1.0/network"/>
+  <feature name="http://api.phonegap.com/1.0/notification"/>
+  <plugin name="cordova-plugin-x-toast" source="npm"/>
+  
+  
+   <icon src="icon.png"            gap:platform="ios"        width="57" height="57" />
+   <icon src="icon72.png"            gap:platform="ios"        width="72" height="72" />
+   <icon src="icon2x.png"         gap:platform="ios"        width="114" height="114" />
+   <icon src="icon722x.png"         gap:platform="ios"        width="144" height="144" />
+  
+  
+</widget>

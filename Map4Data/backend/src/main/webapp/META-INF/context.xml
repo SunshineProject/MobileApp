@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context >
+
+	<Resource name="jdbc/postgres4" 
+			  auth="Container"
+			  username="postgres"
+			  password="postgres"
+              type="javax.sql.DataSource"
+			  driverClassName="org.postgresql.Driver"
+              description="database"
+
+			  url="jdbc:postgresql://20.39.146.59:5432/map4data"
+			  maxActive="20"
+			  maxIdle="10"
+              validationQuery="select 1"
+	/>		  
+			
+
+
+
+
+
+</Context>
